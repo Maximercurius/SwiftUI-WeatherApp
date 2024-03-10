@@ -28,11 +28,7 @@ struct ContentView: View {
                 Button {
                     print("Tapped")
                 } label: {
-                    Text ("Change Day Time")
-                        .frame(width: 280, height: 50)
-                        .background(Color.white)
-                        .font(.system(size: 20, weight: .bold, design: .default))
-                        .cornerRadius(10)
+                    WeatherButton(title: "Change Day Time", textColor: .blue, backGroundColor: .white)
                 }
                 
                 Spacer()
@@ -87,7 +83,7 @@ struct cityTextView: View {
     var body: some View {
         Text(cityName)
             .font(.system(size: 32, weight: .medium, design: .default))
-            .foregroundColor(.blue)
+            .foregroundColor(.white)
             .padding()
     }
 }
@@ -111,3 +107,5 @@ struct MainWeatherStatusView: View {
         .padding(.bottom, 40)
     }
 }
+
+
